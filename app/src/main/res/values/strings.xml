@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AppTracker</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logout">Logout</string>
+    <string name="salir">Salir</string>
+    <string name="info">A cerca de...</string>
+    <string name="csgo">Counter Strike</string>
+    <string name="apex">Apex Legends</string>
+    <string name="warzone">Warzone</string>
+    <string name="juegos">Juegos</string>
+    <string name="perfil">Perfil</string>
+    <string name="historial">Historial</string>
+    <string name="iniciarsesion">Iniciar Sesion</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="cerrar_sesion">Cerrar Sesion</string>
+
+
+</resources>

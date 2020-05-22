@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BB2E2E2E"
+    tools:context=".views.WarzoneDetail">
+
+    <ImageView
+        android:id="@+id/ivFondo"
+        android:layout_width="382dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:background="#0238ED"
+        android:tint="#0C08F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_rounded_square" />
+
+    <ImageView
+        android:id="@+id/ivNombre"
+        android:layout_width="115dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFondo"
+        app:layout_constraintEnd_toStartOf="@+id/tvNombre"
+        app:layout_constraintStart_toStartOf="@+id/ivFondo"
+        app:layout_constraintTop_toTopOf="@+id/ivFondo" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se esta cargando o no existe"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFondo"
+        app:layout_constraintEnd_toEndOf="@+id/ivFondo"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toStartOf="@+id/ivFondo"
+        app:layout_constraintTop_toTopOf="@+id/ivFondo"
+        app:layout_constraintVertical_bias="0.503" />
+
+    <TextView
+        android:id="@+id/tvKills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivKill"
+        app:layout_constraintStart_toEndOf="@+id/ivKill"
+        app:layout_constraintTop_toTopOf="@+id/ivKill" />
+
+    <TextView
+        android:id="@+id/tvDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLevel"
+        app:layout_constraintStart_toEndOf="@+id/ivLevel"
+        app:layout_constraintTop_toTopOf="@+id/ivLevel" />
+
+    <TextView
+        android:id="@+id/tvKdRatio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKills" />
+
+    <TextView
+        android:id="@+id/tvGames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGames"
+        app:layout_constraintStart_toEndOf="@+id/ivGames"
+        app:layout_constraintTop_toTopOf="@+id/ivGames" />
+
+    <TextView
+        android:id="@+id/tvWins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivWins"
+        app:layout_constraintStart_toEndOf="@+id/ivWins"
+        app:layout_constraintTop_toTopOf="@+id/ivWins" />
+
+    <TextView
+        android:id="@+id/tvLe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivRank"
+        app:layout_constraintStart_toEndOf="@+id/ivRank"
+        app:layout_constraintTop_toTopOf="@+id/ivRank" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="322dp"
+        android:layout_marginLeft="322dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/ivKill"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFondo"
+        app:srcCompat="@drawable/kills" />
+
+    <ImageView
+        android:id="@+id/ivLevel"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivKill"
+        app:srcCompat="@drawable/deaths" />
+
+    <ImageView
+        android:id="@+id/ivGames"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLevel"
+        app:srcCompat="@drawable/wins" />
+
+    <ImageView
+        android:id="@+id/ivWins"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivGames"
+        app:srcCompat="@drawable/games" />
+
+    <ImageView
+        android:id="@+id/ivRank"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivWins" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
